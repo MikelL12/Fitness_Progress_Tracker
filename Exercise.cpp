@@ -13,6 +13,7 @@ Exercise::Exercise(){
     reps = 0;
     weight = 0;
 }
+
 //Parameterized constructor
 Exercise::Exercise(string tempname, int tempsets, int tempreps, int tempweight){
     workoutName = tempname;
@@ -35,7 +36,7 @@ void Exercise::setworkoutWeight(int tempweight){
     weight = tempweight;
 }
  
- //getters
+//getters
 string Exercise::getworkoutName() const{
     return workoutName;
 }
@@ -68,7 +69,6 @@ void Exercise::removeWorkout(string removedworkoutName){
 
 }
 
-//
 void Exercise::changeWorkoutInfo(const Exercise& changeWorkout){
     cout << "ATTEMPING TO CHANGE WORKOUT" << endl;
     for (int i = 0; i < workoutList.size(); i++){
